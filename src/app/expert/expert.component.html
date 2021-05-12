@@ -1,0 +1,263 @@
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+
+<mat-step [stepControl]="firstFormGroup" >
+     
+      <form [formGroup]="firstFormGroup">
+       <!-- Header Container -->
+
+<div  style="align-items: center; margin-top: -50px; margin-left: 0px; background-color: #ffffff;
+             opacity: 100%; height:50px; width: 1350px; position: absolute;" >
+    <div class="flex" >
+        <img src="./../../assets/documents (1).svg" class="w-8 h-8" style=" margin-left: 10px;  margin-top: -5px;">
+    <h1 class="text-blue-500 font-bold px-6 ">Dossier N° 695231</h1>
+    </div>   
+</div>
+<div class="flex space-x-4    rounded-lg  " style="width:1380px; height: 540px;">
+      <!-- Left Container -->
+    <div class=" px-2   rounded-lg w-1/2  "style="height: 540px;">
+
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg  mb-3" style="height: 260px;" >
+            <div class="flex" >
+                <img src="./../../assets/pin.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Lieu de l'accident</h1>
+            </div>
+            <iframe  width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="height: 200px;" ></iframe>
+
+ 
+        </div>
+    
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg mb-3" style="height: 7.5rem;">
+            <div class="flex" >
+                <img src="./../../assets/paper.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Documents</h1>
+            </div>
+            <div class="overflow-x-auto ">
+
+            </div>
+        </div>
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg " style="height: 7.5rem;">
+            <div class="flex" >
+                <img src="./../../assets/google-docs.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Facture</h1>
+            </div>
+            <div class="overflow-x-auto flex">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+                <img src="./../../assets/image.svg" class="w-12 h-8" style="margin-top: 2px; margin-left: 10px;">
+
+         
+            </div>
+        </div>
+
+    </div>
+      <!-- Right Container -->
+    <div class=" px-2   rounded-lg w-1/2  "style="height: 540px;" >
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg  h-32 mb-3">
+            <div class="flex" >
+                <img src="./../../assets/accident-de-voiture.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Type de l'accident</h1>
+            </div>
+            <div class="px-4"> 
+              <mat-radio-group aria-label="Options" formControlName="options">
+                <div><mat-radio-button value="oui">Collision</mat-radio-button></div>
+               <div><mat-radio-button value="non">Autre</mat-radio-button></div>
+              </mat-radio-group>
+            </div>
+ 
+        </div>
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg  mb-3" style="height: 245px;">
+            <div class="flex" >
+                <img src="./../../assets/lecteur-video.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Vidéo de l'accident</h1>
+            </div>
+            <iframe src="https://www.youtube.com/embed/onGynY3EaL4?autoplay=1  " style="height: 180px; width: 645px;"></iframe>
+ 
+        </div>
+
+        <div class=" px-2 py-2 border-1 border-gray-700 rounded-lg h-32">
+            <div class="flex" >
+                <img src="./../../assets/notes.png" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+            <h1 class="text-gray-900 font-medium px-2 py-2">Devis</h1>
+            </div>
+            <div class="overflow-x-auto ">
+
+            </div>
+        </div>
+ 
+    </div>
+    
+
+</div>
+<!-- Button Container -->
+<div class=" px-2 py-2 rounded-lg h-12 ">
+        
+    <button class="w-64 font-bold  flex-shrink-0 text-white  bg-blue-600 rounded py-0  focus:outline-none hover:text-white hover:bg-blue-400 rounded text-lg mt-10 sm:mt-0" style="margin-left:550px"  mat-button matStepperNext >Continuer</button>
+
+</div>
+        
+      </form>
+    
+</mat-step>
+<mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+<div  style="align-items: center; margin-top: -50px; margin-left: 0px; background-color: #ffffff;
+             opacity: 100%; height:50px; width: 1350px; position: absolute;" >
+    <div class="flex" >
+        <img src="./../../assets/documents (1).svg" class="w-8 h-8" style=" margin-left: 10px; margin-top: -5px;">
+        <h1 class="text-blue-500 font-bold px-6 ">Dossier N° 695231</h1>
+    </div>   
+</div>
+
+<div class="flex space-x-4 mb-3 rounded-lg  " style="width:1380px; height: 400px;">
+    <!-- Left Container -->
+  <div class=" px-2   border-1 border-gray-700 rounded-lg w-1/2  items-center justify-center"style="height: 400px;">
+    <div class="flex" >
+        <img src="./../../assets/notes.png" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Rapport d'expertise</h1>
+    </div>
+    <div class="overflow-auto " >
+    <div style="height: 21rem; margin-left: 250px;">
+    <div>
+    <mat-form-field>
+        <div><label>Nom</label></div>
+        <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3" style="width: 400px;">
+    </mat-form-field>
+    </div>
+    <div>
+    <mat-form-field>
+        <div><label>N° de contrat</label></div>
+        <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+    </mat-form-field>
+    </div>
+    <div>
+    <mat-form-field>
+        <div><label>N° de carte verte</label></div>
+        <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+    </mat-form-field>
+    </div>
+    <div>
+    <mat-form-field>
+        <div><label>Agence (ou bureau )</label></div>
+        <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+    </mat-form-field>
+    </div>
+    <div class="flex space-x-4" > 
+        <mat-form-field>
+            <div><label>Du</label></div>
+            <input matInput  formControlName="heure" required class="docs-date   pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3" style="width: 6rem;">
+        </mat-form-field>
+        <mat-form-field>
+            <div style=" margin-left: -5rem; "><label>Au</label></div>
+            <input matInput  formControlName="heure" required class="docs-date   pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3" style="width: 6rem; margin-left: -5rem; ">
+        </mat-form-field>
+    
+    </div>
+    <div>
+    <mat-form-field>
+        <div><label>Détails</label></div>
+        <textarea matInput rows="4"  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+        </textarea>
+    </mat-form-field>
+    </div>
+  </div>
+  
+  </div>
+ 
+  </div>
+    <!-- Right Container -->
+  <div class=" px-2  border-1 border-gray-700 rounded-lg w-1/2  "style="height: 400px;" >
+    <div class="flex" >
+        <img src="./../../assets/notes.png" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Suivi De réparation</h1>
+    </div>
+    <div class="overflow-auto " >
+        <div style="height: 21rem; margin-left: 250px;">
+        <div>
+        <mat-form-field>
+            <div><label>Marque , Type</label></div>
+            <input matInput  formControlName="heure" required class=" py-2  rounded-lg shadow-sm   text-gray-600 font-medium bg-gray-300 mb-3" style="width: 400px;">
+        </mat-form-field>
+        </div>
+        <div>
+        <mat-form-field>
+            <div><label>N° d'immatriculation</label></div>
+            <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+        </mat-form-field>
+        </div>
+        <div>
+        <mat-form-field>
+            <div><label>Pays d'immatriculation</label></div>
+            <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+        </mat-form-field>
+        </div>
+        <div>
+        <mat-form-field>
+            <div><label>Cout des piéces</label></div>
+            <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+        </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <div><label>Main d'oeuvre</label></div>
+                <input matInput  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+            </mat-form-field>
+            </div>
+     
+        <div>
+        <mat-form-field>
+            <div><label>Détails</label></div>
+            <textarea matInput rows="4"  formControlName="heure" required class="docs-date  pl-4 pr-10 py-2 leading-none rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium bg-gray-300 mb-3">
+            </textarea>
+        </mat-form-field>
+        </div>
+      </div>
+      
+      </div>
+    
+
+  </div>
+  
+
+</div>
+<div class="flex space-x-4   border-1 border-gray-700 rounded-lg  " style="width:1380px; height: 130px;">
+    <div class="flex" >
+        <img src="./../../assets/image.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Dépot des images</h1>
+    </div>
+   
+    
+       
+              
+                    <div class="relative border-dotted h-32   flex justify-center items-center hover:bg-blue-100 rounded-full" style="margin-left: 350px;">
+                        <div class="absolute">
+                            <div class="flex flex-col items-center"> <img src="./../../assets/uploads.png" class="w-16 h-16"> <span class="block text-gray-900 font-normal">Glisser les photos ici</span><div class="flex"><span class="block text-gray-900 font-normal">Ou </span><P class="block text-blue-600 font-normal">Parcourir</P></div> </div>
+                        </div> <input type="file" class="h-full w-full opacity-0" name="">
+                    </div>
+                
+          
+    
+    
+
+
+</div>
+<!-- Button Container -->
+<div class=" px-2 py-2 rounded-lg h-12 ">
+        
+    <button class="w-64 font-bold  flex-shrink-0 text-white  bg-blue-600 rounded py-0  focus:outline-none hover:text-white hover:bg-blue-400 rounded text-lg mt-10 sm:mt-0" style="margin-left:550px"  mat-button matStepperNext >Continuer</button>
+
+</div>
+</form>
+</mat-step>
