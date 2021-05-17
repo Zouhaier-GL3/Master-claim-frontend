@@ -21,6 +21,7 @@ export class ExpertComponent implements OnInit {
     });
     this.secondFormGroup = this._formBuilder.group({
       heure: ['', Validators.required],
+      img: ['', Validators.required],
     });
   }
   

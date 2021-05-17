@@ -1,4 +1,4 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper>
+<mat-horizontal-stepper [linear]="isLinear" #stepper >
 
 <mat-step [stepControl]="firstFormGroup" >
      
@@ -240,6 +240,155 @@
    
     
        
+  
+                    <div class="relative border-dotted h-32   flex justify-center items-center hover:bg-blue-100 rounded-full" style="margin-left: 350px;">
+                        <div class="absolute">
+                            <div class="flex flex-col items-center"> <img src="./../../assets/uploads.png" class="w-16 h-16"> <span class="block text-gray-900 font-normal">Glisser les photos ici</span><div class="flex"><span class="block text-gray-900 font-normal">Ou </span><P class="block text-blue-600 font-normal">Parcourir</P></div> </div>
+                        </div> <input type="file"  class="h-full w-full opacity-0" name="file">
+                    </div>
+                
+ 
+    
+    
+
+
+</div>
+<!-- Button Container -->
+<div class=" px-2 py-2 rounded-lg h-12 ">
+        
+    <button class="w-64 font-bold  flex-shrink-0 text-white  bg-blue-600 rounded py-0  focus:outline-none hover:text-white hover:bg-blue-400 rounded text-lg mt-10 sm:mt-0" style="margin-left:550px"  mat-button matStepperNext >Continuer</button>
+
+</div>
+</form>
+</mat-step>
+
+<mat-step [stepControl]="lastFormGroup">
+    <form >
+<div  style="align-items: center; margin-top: -50px; margin-left: 0px; background-color: #ffffff;
+             opacity: 100%; height:50px; width: 1350px; position: absolute;" >
+    <div class="flex" >
+        <img src="./../../assets/documents (1).svg" class="w-8 h-8" style=" margin-left: 10px; margin-top: -5px;">
+        <h1 class="text-blue-500 font-bold px-6 ">Dossier N° 695231</h1>
+    </div>   
+</div>
+
+<div class="flex space-x-4 mb-3 rounded-lg  " style="width:1380px; height: 400px;">
+    <!-- Left Container -->
+  <div class=" px-2   border-1 border-gray-700 rounded-lg w-1/2  items-center justify-center"style="height: 400px;">
+    <div class="flex" >
+        <img src="./../../assets/notes.png" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Rapport d'expertise</h1>
+    </div>
+    <div class="overflow-auto " >
+    <div style="height: 21rem; margin-left: 200px;">
+    <div>
+   
+        <div><label>Nom</label></div>
+        <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+    
+    </div>
+    <div>
+   
+        <div><label>N° de contrat</label></div>
+        <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+   
+    </div>
+    <div>
+    
+        <div><label>N° de carte verte</label></div>
+        <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+    
+    </div>
+    <div>
+    
+        <div><label>Agence (ou bureau )</label></div>
+        <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+   
+    </div>
+    <div class="flex space-x-4" > 
+       
+            <div><label>Du:</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-16">{{ this.secondFormGroup.value.heure }}</p>
+       
+       
+            <div style=" margin-left: 3rem; "><label>Au:</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-16">{{ this.secondFormGroup.value.heure }}</p>
+       
+    
+    </div>
+    <div>
+    
+        <div><label>Détails</label></div>
+        <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64 h-16">{{ this.secondFormGroup.value.heure }}</p>
+        
+    
+    </div>
+  </div>
+  
+  </div>
+ 
+  </div>
+    <!-- Right Container -->
+  <div class=" px-2  border-1 border-gray-700 rounded-lg w-1/2  "style="height: 400px;" >
+    <div class="flex" >
+        <img src="./../../assets/notes.png" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Suivi De réparation</h1>
+    </div>
+    <div class="overflow-auto " >
+        <div style="height: 21rem; margin-left: 200px;">
+        <div>
+        
+            <div><label>Marque , Type</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+        
+        </div>
+        <div>
+        
+            <div><label>N° d'immatriculation</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+        
+        </div>
+        <div>
+    
+            <div><label>Pays d'immatriculation</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+        
+        </div>
+        <div>
+        
+            <div><label>Cout des piéces</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64">{{ this.secondFormGroup.value.heure }}</p>
+       
+        </div>
+        <div>
+           
+                <div><label>Main d'oeuvre</label></div>
+           
+            </div>
+     
+        <div>
+        
+            <div><label>Détails</label></div>
+            <p class="leading-relaxed mb-3 bg-gray-200 rounded-lg border-blue-600 border-2 w-64 h-16">{{ this.secondFormGroup.value.heure }}</p>
+       
+        </div>
+      </div>
+      
+      </div>
+    
+
+  </div>
+  
+
+</div>
+<div class="flex space-x-4   border-1 border-gray-700 rounded-lg  " style="width:1380px; height: 130px;">
+    <div class="flex" >
+        <img src="./../../assets/image.svg" class="w-8 h-8" style="margin-top: 2px; margin-left: 10px;">
+    <h1 class="text-gray-900 font-medium px-2 py-2">Dépot des images</h1>
+    </div>
+   
+    
+       
               
                     <div class="relative border-dotted h-32   flex justify-center items-center hover:bg-blue-100 rounded-full" style="margin-left: 350px;">
                         <div class="absolute">
@@ -261,3 +410,4 @@
 </div>
 </form>
 </mat-step>
+

@@ -1,18 +1,17 @@
 import { Component, OnInit, VERSION } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-add-constat',
   templateUrl: './add-constat.component.html',
-  styleUrls: ['./add-constat.component.css']
+  styleUrls: ['./add-constat.component.css'],
 })
 export class AddConstatComponent implements OnInit {
  
-  constructor(private _formBuilder: FormBuilder, private fb: FormBuilder) {this.BlessesFormGroup = this.fb.group({
-    options: ['1']
-  })}
+  constructor(private _formBuilder: FormBuilder, private fb: FormBuilder) {}
 
-  
+
   isLinear = true;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
@@ -229,7 +228,7 @@ export class AddConstatComponent implements OnInit {
   
   
 
-  
+
   
   printPage() {
     window.print();

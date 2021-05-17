@@ -11,6 +11,7 @@ import { AddressComponent } from './address/address.component';
 import { AuthGuardService } from './auth-guard.service';
 import { AgentSaisieComponent } from './agent-saisie/agent-saisie.component';
 import { ExpertComponent } from './expert/expert.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: 'expert',
     component: ExpertComponent,
+  },
+  {
+    path: 'home',
+    component: DashboardComponent,
   },
 ];
 

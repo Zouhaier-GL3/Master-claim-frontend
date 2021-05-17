@@ -25,11 +25,25 @@ import { AddConstatComponent } from './add-constat/add-constat.component';
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { AgentSaisieComponent } from './agent-saisie/agent-saisie.component';
-import { NgxMaterialTimepickerToggleIconDirective, TimepickerDirective } from 'ngx-material-timepicker';
-import { NgxMaterialTimepickerToggleComponent } from 'ngx-material-timepicker/src/app/material-timepicker/components/timepicker-toggle-button/ngx-material-timepicker-toggle.component';
+
 import { PinshZoomComponent } from './pinsh-zoom/pinsh-zoom.component';
 import { CommonModule } from '@angular/common';
 import { ExpertComponent } from './expert/expert.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TableComponent } from './table/table.component';
+import { TableItemComponent } from './table-item/table-item.component';
+import { SideListComponent } from './side-list/side-list.component';
+
+
+import { ToastModule } from 'primeng/toast';
+import {DialogModule} from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import {PaginatorModule} from 'primeng/paginator';
+import {AvatarModule} from 'primeng/avatar';
+import {AvatarGroupModule} from 'primeng/avatargroup';
+import { TableModule } from 'primeng/table';
+import {CheckboxModule} from 'primeng/checkbox';
+
 
 
 
@@ -48,6 +62,10 @@ import { ExpertComponent } from './expert/expert.component';
     AgentSaisieComponent,
     PinshZoomComponent,
     ExpertComponent,
+    DashboardComponent,
+    TableComponent,
+    TableItemComponent,
+    SideListComponent,
  
   ],
   imports: [
@@ -73,8 +91,15 @@ import { ExpertComponent } from './expert/expert.component';
    
     // MatRadioButton,
     MatRadioModule,
-    CommonModule
-
+    CommonModule,
+    CheckboxModule,
+    DialogModule,
+    ToastModule,
+    ButtonModule,
+    AvatarModule,
+    PaginatorModule,
+    AvatarGroupModule,
+    TableModule,
   
     
   ],
